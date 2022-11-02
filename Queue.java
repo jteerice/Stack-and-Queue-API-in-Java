@@ -27,7 +27,6 @@ public class Queue<T> implements IQueue<T>{
     }
 
     public T pop() throws NoSuchElementException {
-        // exception throwing checks have already been added
         if(isEmpty()){
             throw new NoSuchElementException("Queue is empty");
         }
@@ -54,7 +53,6 @@ public class Queue<T> implements IQueue<T>{
     }
 
     public T peek() throws NoSuchElementException {
-        // exception throwing checks have already been added
         if(isEmpty()){
             throw new NoSuchElementException("Queue is empty");
         }
@@ -70,7 +68,6 @@ public class Queue<T> implements IQueue<T>{
         else return false;
     }
 
-    /* do not modify this function, call this to check the current size of your array */
     public int totalCapactiy(){
         return dataArray.length;
     }
